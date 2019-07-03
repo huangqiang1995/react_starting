@@ -1,4 +1,5 @@
-import React,{ Component } from 'react';
+import React,{ Component  } from 'react';
+import PropTypes from 'prop-types';
  
 class ClickChild extends Component {
   
@@ -27,5 +28,11 @@ class ClickChild extends Component {
     );
   }
 }
+ 
+console.log(PropTypes)
+ClickChild.propTypes = {
+  caption: PropTypes.string.isRequired,
+  initValue: PropTypes.number
+};
 
 export default ClickChild;
