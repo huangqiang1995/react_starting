@@ -18,7 +18,7 @@ class AddTodo extends Component {
     }
   }
   refInput(node){
-    this.input = node; 
+    this.input = node;
   }
   render(){
     return (
